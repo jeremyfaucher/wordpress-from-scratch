@@ -18,6 +18,7 @@ add_action( 'after_setup_theme', 'starter_setup' );
 * Enqueue css and js
 */
 function starter_styles() {
+	wp_dequeue_style( 'global-styles' );
 }
 add_action('wp_enqueue_scripts', 'starter_styles');
 
@@ -35,7 +36,17 @@ require get_template_directory() . '/inc/remove_cat_slug.php';
 // Disable comments
 require get_template_directory() . '/inc/remove_comments.php';
 // Remove the WordPress admin editors
-require get_template_directory() . '/inc/remove_editors.php';
+//require get_template_directory() . '/inc/remove_editors.php';
 // Disable emojis
 require get_template_directory() . '/inc/remove_emojis.php';
+//Remove WordPress.org Dns-prefetch
+require get_template_directory() . '/inc/remove_wp_dns_prefetch.php';
+//Remove All RSS Header links from head
+require get_template_directory() . '/inc/remove_rss_header_links.php';
+//Remove short link from head
+require get_template_directory() . '/inc/remove_short_link.php';
+//Remove rest and json api
+require get_template_directory() . '/inc/remove_json_api.php';
+
+
 
