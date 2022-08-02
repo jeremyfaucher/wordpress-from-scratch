@@ -47,6 +47,8 @@ require get_template_directory() . '/inc/remove_rss_header_links.php';
 require get_template_directory() . '/inc/remove_short_link.php';
 //Remove rest and json api
 require get_template_directory() . '/inc/remove_json_api.php';
+//Remove uneeded nav menu id and classes
+require get_template_directory() . '/inc/remove_nav_classes.php';
 
 
 
