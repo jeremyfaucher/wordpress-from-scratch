@@ -71,8 +71,7 @@ section.section--bg {
 * Header
 */
 header.container--full {
-	padding-top: 2px;
-    padding-bottom: 7px;
+	padding-top: 4px;
 }
 @media (min-width: 45em) {
 	.header--content {
@@ -83,9 +82,10 @@ header.container--full {
 }
 .header--content > * {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	padding-bottom: 10px;
 }
+
 /* Nav */
 header ul.menu-items {
 	margin: 0;
